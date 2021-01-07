@@ -15,6 +15,9 @@ header {
     0px;
     margin-bottom: 5px;
     /* padding-top: inherit; */
+    *{
+        color: DimGrey;
+    }
 }
 header h2 {
     color: rgb(241, 200, 249);
