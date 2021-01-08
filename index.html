@@ -8,7 +8,7 @@
         <script src="app1.js"></script>
     </head>
 
-    <body >
+    <body>
         <header>
           <input type="text" id="colorInputText" placeholder="Enter your favorite color">
           <input type="button" id="colorButton" value="Click Here">
@@ -18,7 +18,9 @@
             </h1>
            
             <nav>
-              <h2><script>askUserName()</script><script>getGreeting()</script></h2>
+              
+              <h2><script>askUserName()</script>
+                <script>getGreeting()</script></h2>
                 <ul>
                     <li>Home</li>
                     <li>Women</li>
@@ -28,12 +30,16 @@
                     <li> <a href="https://paulomartin90.github.io/shirt_shop/">About</a> </li>
                 </ul>
             </nav>
+
+            
             
         </header>
 
         <main>
             <section>
-              
+              <ul id="tees">
+                <script>printPics()</script>
+              </ul>
 
               <article>
                 <h2>
@@ -62,8 +68,7 @@
             </section>
 
             <aside>
-                <h3> Hey
-                  <script>printUserName()</script>, check out what's new on Insta!!
+                <h3> Hey you, check out what's new on Insta!!
                 </h3>
                 <img src="images/pic_02.jpg" alt="">
 
@@ -73,6 +78,8 @@
         </main>
 
         <footer>
+         
+
             <ul>
                 <li>Support</li>
                 <li>support@theshirtshop.com</li>

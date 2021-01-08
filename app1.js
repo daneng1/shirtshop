@@ -18,19 +18,12 @@ let button = document.getElementById('colorButton');
 button.addEventListener("click",changeColor);
 }
 
-function printUserName() {
-    let seeUser = askUserName(value);
-
-    return seeUser;
-}
-
 function getGreeting() {
 
     let today = new Date();
     let hourNow = today.getHours();
     let greeting;
- 
- 
+
     if (hourNow > 17) {
         greeting = ' what a great evening to buy some tee\'s!';
     }    else if (hourNow > 12) {
@@ -43,3 +36,14 @@ function getGreeting() {
  
     document.write(greeting);
  }
+
+ function printPics(){
+    let userRate = parseInt(prompt('How much do you like tees? Enter 1-5'));
+    if (userRate > 5){
+        userRate = 5
+    }
+    for(let i = 0; i < userRate; i++){
+        document.write('<li> <img class="imgsizes" src="https://media0.giphy.com/media/l0K45gX4NUd2zCl6U/giphy.gif"> </li>')
+     }
+ }
+
